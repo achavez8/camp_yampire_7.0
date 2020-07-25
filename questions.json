@@ -1,0 +1,92 @@
+{
+        "actions": [
+            {
+                "collect": {
+                    "name": "choose_a_name",
+                    "questions": [
+                        {
+                            "question": "write out first question",
+                            "name": "q1",
+                            "validate": {
+                                "allowed_values": {
+                                    "list": [
+                                        "a",
+                                        "b",
+                                        "c"
+                                    ]
+                                },
+                                "on_failure": {
+                                    "messages": [
+                                        {
+                                            "say": "Please send a, b, or c!"
+                                        }
+                                    ],
+                                    "repeat_question": true
+                                },
+                                "max_attempts": {
+                                    "redirect": "task://greeting",
+                                    "num_attempts": 3
+                                }
+                            }
+                        },
+                        {
+                            "question": "write out second question",
+                            "name": "q2",
+                            "validate": {
+                                "allowed_values": {
+                                    "list": [
+                                        "a",
+                                        "b",
+                                        "c"
+                                    ]
+                                },
+                                "on_failure": {
+                                    "messages": [
+                                        {
+                                            "say": "Please send a, b, or c!"
+                                        }
+                                    ],
+                                    "repeat_question": true
+                                },
+                                "max_attempts": {
+                                    "redirect": "task://greeting",
+                                    "num_attempts": 3
+                                }
+                            }
+                        },
+                        {
+                            "question": "write out third question",
+                            "name": "q3",
+                            "validate": {
+                                "allowed_values": {
+                                    "list": [
+                                        "a",
+                                        "b",
+                                        "c"
+                                    ]
+                                },
+                                "on_failure": {
+                                    "messages": [
+                                        {
+                                            "say": "Please send a, b, or c!"
+                                        }
+                                    ],
+                                    "repeat_question": true
+                                },
+                                "max_attempts": {
+                                    "redirect": "task://greeting",
+                                    "num_attempts": 3
+                                }
+                            }
+                        }
+                    ],
+                    "on_complete": {
+                        "redirect": {
+                            "method": "POST",
+                            "uri": "https://UNIQUE_USERNAME.twil.io/YOU_CHOOSE_PATH" //CHANGE THIS!
+                        }
+                    }
+                }
+            }
+        ]
+    }

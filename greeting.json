@@ -1,0 +1,10 @@
+{
+	"actions": [
+		{
+			"say": "common practice: greet and say what your bot will do"
+		},
+		{
+			"redirect": "task://main_questions"
+		}
+	]
+}
