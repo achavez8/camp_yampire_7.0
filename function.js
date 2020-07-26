@@ -3,7 +3,7 @@ exports.handler = function(context, event, callback) {
     let memory = JSON.parse(event.Memory);
     let respObj = {};
     //get answer from Memory
-    let q1 = memory.twilio.collected_data.choose_a_name.answers.q1.answer.toLowerCase();
+    let q1 = memory.twilio.collected_data.choose_a_name.answers.q1.answer.toLowerCase(); //bug fixed; it was mising the 'answers' method between 'choose_a_name" and 'q1'
     let q2 = memory.twilio.collected_data.choose_a_name.answers.q2.answer.toLowerCase();
     let q3 = memory.twilio.collected_data.choose_a_name.answers.q3.answer.toLowerCase();
     const result = Object.entries(
