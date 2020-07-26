@@ -21,7 +21,7 @@ exports.handler = function(context, event, callback) {
         msg = "Yoga with Adriene's Courage Challenge will be the fiery yet gentle practice you're craving ⚖️ https://s3.amazonaws.com/kajabi-storefronts-production/sites/40265/themes/2380946/downloads/jb3tIFBXR2iXnGhbfvq6_YWA_June_2020_Yoga_Calendar.pdf";
     }
     else{
-        msg = "Yoga with Adriene's Shift Challenge will take you new places 🛫https://s3.amazonaws.com/kajabi-storefronts-production/sites/40265/themes/2380946/downloads/AVtKKdovQum02YXxQNJg_YWA_July_2020_Yoga_Calendar.pdf";
+        msg = "Yoga with Adriene's Shift Challenge will take you new places 🛫 https://s3.amazonaws.com/kajabi-storefronts-production/sites/40265/themes/2380946/downloads/AVtKKdovQum02YXxQNJg_YWA_July_2020_Yoga_Calendar.pdf";
     }
     respObj = {
         "actions":[
