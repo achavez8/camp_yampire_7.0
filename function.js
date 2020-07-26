@@ -1,10 +1,11 @@
 exports.handler = function(context, event, callback) {
+	// twiml.say("Hello World");
     let memory = JSON.parse(event.Memory);
     let respObj = {};
     //get answer from Memory
-    let q1 = memory.twilio.collected_data.choose_a_name.q1.answer.toLowerCase(); //change "choose_a_name" to the name of your bot. Can be found on 5th line of the "questions.json" file
-    let q2 = memory.twilio.collected_data.choose_a_name.q2.answer.toLowerCase();
-    let q3 = memory.twilio.collected_data.choose_a_name.q3.answer.toLowerCase();
+    let q1 = memory.twilio.collected_data.choose_a_name.answers.q1.answer.toLowerCase();
+    let q2 = memory.twilio.collected_data.choose_a_name.answers.q2.answer.toLowerCase();
+    let q3 = memory.twilio.collected_data.choose_a_name.answers.q3.answer.toLowerCase();
     const result = Object.entries(
         [q1, q2, q3].reduce((previous, current) => {
             if(previous[current] === undefined) previous[current]=1;
@@ -14,13 +15,13 @@ exports.handler = function(context, event, callback) {
     
     var msg = '';
     if(result == 'a'){
-        msg = "🥁 if the result is mostly As, this prints out (you can add links and emojis) https://www.google.com";
+        msg = "sounds like Yoga with Adriene's Mediate Challenge will help you in your journey towards mindfulness 😌 https://s3.amazonaws.com/kajabi-storefronts-production/sites/40265/themes/2380946/downloads/RF5B1Tv4SIey2jlpHRll_YWA_May_2020_Yoga_Calendar.pdf";
     }
     else if(result == 'b'){
-        msg = "message for mostly Bs";
+        msg = "Yoga with Adriene's Courage Challenge will be the fiery yet gentle practice you're craving ⚖️ https://s3.amazonaws.com/kajabi-storefronts-production/sites/40265/themes/2380946/downloads/jb3tIFBXR2iXnGhbfvq6_YWA_June_2020_Yoga_Calendar.pdf";
     }
-    else {
-        msg = "message for mostly Cs";
+    else{
+        msg = "Yoga with Adriene's Shift Challenge will take you new places 🛫https://s3.amazonaws.com/kajabi-storefronts-production/sites/40265/themes/2380946/downloads/AVtKKdovQum02YXxQNJg_YWA_July_2020_Yoga_Calendar.pdf";
     }
     respObj = {
         "actions":[

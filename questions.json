@@ -83,7 +83,7 @@
                     "on_complete": {
                         "redirect": {
                             "method": "POST",
-                            "uri": "https://UNIQUE_USERNAME.twil.io/YOU_CHOOSE_PATH" //CHANGE THIS!
+                            "uri": "https://UNIQUE_USERNAME.twil.io/YOU_CHOOSE_PATH(BE SURE TO CHANGE THIS! OBTAIN LINK FROM FUNCTIONS)" 
                         }
                     }
                 }
