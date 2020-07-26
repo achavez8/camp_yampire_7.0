@@ -5,7 +5,7 @@
                     "name": "choose_a_name",
                     "questions": [
                         {
-                            "question": "write out first question",
+                            "question": "Quick, think of a number from 1-10! Was it closer to: \n a. 5 \n b. 6 \n c. 7",
                             "name": "q1",
                             "validate": {
                                 "allowed_values": {
@@ -30,7 +30,7 @@
                             }
                         },
                         {
-                            "question": "write out second question",
+                            "question": "What have you been trying to do more of lately? \n a. reflect and practice gratitude 🙏🏻 \n b. try out a strengthening workout 💪 \n c. put myself in another person's shoes 🥾",
                             "name": "q2",
                             "validate": {
                                 "allowed_values": {
@@ -55,7 +55,7 @@
                             }
                         },
                         {
-                            "question": "write out third question",
+                            "question": "Which of these Disney/Pixar phrases do you identify most with? \n a. I never look back, darling. It distracts from the now \n b. This isn’t flying. This is falling with style \n c. A new fantastic point of view",
                             "name": "q3",
                             "validate": {
                                 "allowed_values": {
